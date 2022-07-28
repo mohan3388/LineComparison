@@ -4,7 +4,8 @@
     {
         public static void Main(string[] args)
         {
-            LengthOfLine.LengthLine();
+            LengthOfLine length = new LengthOfLine(1, 2, 1, 2);
+            length.calculateLength();
         }
     }
 }
