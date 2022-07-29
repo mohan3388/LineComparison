@@ -32,10 +32,10 @@ namespace LineComparisonProblem
         }
         public void Compare()
         {
-            int u = 8;
+            
             l1 = x2 - x1;
             l2 = y2 - y1;
-            int n = u.CompareTo(8);
+            int n = l1.CompareTo(l2);
             if(n>0)
             {
                 Console.WriteLine("l1 is Greater Than l2");
