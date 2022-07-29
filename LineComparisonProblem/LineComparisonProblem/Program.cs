@@ -7,6 +7,7 @@
             LengthOfLine length = new LengthOfLine();
             length.Cartesian();
             length.Equality();
+            length.Compare();
         }
     }
 }
