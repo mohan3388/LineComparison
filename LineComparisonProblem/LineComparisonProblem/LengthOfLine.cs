@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +8,14 @@ namespace LineComparisonProblem
 {
     public class LengthOfLine
     {
-        int x1, x2, y1, y2;
-        public LengthOfLine(int x1, int x2, int y1, int y2)
+        public int x1 = 20, x2 = 40, y1 = 50, y2 = 80;
+        public double length;
+        public int l1, l2;
+
+        public void Cartesian()
         {
-            this.x1 = x1;
-            this.x2 = x2;
-            this.y1 = y1;
-            this.y2 = y2;
-        }
-        public void calculateLength()
-        {
-            int result = (int) Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
-            Console.WriteLine("Length og the Cartesian Line:" + " " + result);
+            length = Math.Sqrt((Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)));
+            Console.WriteLine(length);
         }
     }
 }
